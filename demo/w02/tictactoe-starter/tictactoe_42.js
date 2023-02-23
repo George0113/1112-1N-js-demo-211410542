@@ -61,27 +61,31 @@ allLi.forEach((item) =>{
     item.addEventListener('click', () => {
         if(item.classList.contains('disabled')){
             alert('Already Filled');
-        }else if(turn % 2 === 0){
-            item.textContent = 'O';
-            item.classList.add('o','disabled');
-            if(checkWin('o')){
-                winMessage(o);
-                done = true;
+        }
+        else if(!done){
+            if(turn % 2 === 0){
+                item.textContent = 'O';
+                item.classList.add('o','disabled');
+                if(checkWin('o')){
+                    winMessage(o);
+                    done = true;
+                }
+            }else if ( turn % 2 === 1){
+                item.textContent = 'X';
+                item.classList.add('x','disabled');
+                if(checkWin('x')){
+                    winMessage(x);
+                    done = true;
+                }
             }
-        }else if ( turn % 2 === 1){
-            item.textContent = 'X';
-            item.classList.add('x','disabled');
-            if(checkWin('x')){
-                winMessage(x);
-                done = true;
+    
+            if(!done && turn < 8){
+                turn++;
+            }else if(turn >=8){
+                alert('tie');
             }
         }
 
-        if(!done && turn < 8){
-            turn++;
-        }else if(turn >=8){
-            alert('tie');
-        }
     })
 });
 
