@@ -2,9 +2,9 @@
 const reviews = [
   {
     id: 1,
-    name: 'susan smith',
-    job: 'web developer',
-    img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+    name: 'George chen',
+    job: 'software engineer',
+    img: 'https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/md_1N_img/cat2%20(1).png?t=2023-03-02T11%3A54%3A15.723Z',
     text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
   {
@@ -42,11 +42,36 @@ const randomBtn = document.querySelector('.random-btn');
 
 let currentItem = 0;
 
-window.addEventListener('DOMContentLoaded',() => {
-  const item = reviews[currentItem];
+
+const showReview = (person) =>{
+  const item = reviews[person];
   console.log('item', item);
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
+}
+
+
+
+window.addEventListener('DOMContentLoaded',() => {
+  showReview(currentItem);
 });
+
+nextBtn.addEventListener('click',() => {
+  currentItem++;
+  if(currentItem >= reviews.length){
+    currentItem = 0;
+  }
+  // console.log('currentItem', reviews[currentItem]);
+  showReview(currentItem);
+})
+
+// randomBtn.addEventListener('click',() => {
+//   currentItem++;
+//   if(currentItem >= reviews.length){
+//     currentItem = 0;
+//   }
+//   // console.log('currentItem', reviews[currentItem]);
+//   showReview(currentItem);
+// })
