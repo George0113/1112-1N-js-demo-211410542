@@ -50,7 +50,7 @@ const menu = [
 
     },
     {
-        id: 4,
+        id: 6,
         title:'godzilla milkshake',
         category:'shakes',
         price:15.59,
@@ -66,3 +66,33 @@ const menu = [
 
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
+
+const displayMenuItems = (menu) => {
+    let displayMenu = menu.map((item) => {
+        return `
+        <article class="menu-item">
+          <img src="${item.img}" alt=${item.title} class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>${item.title}</h4>
+              <h4 class="price">${item.price}</h4>
+            </header>
+            <p class="item-text">
+                ${item.desc}
+            </p>
+          </div>
+        </article>
+        
+        `
+    });
+    console.log('displayMenu before join',displayMenu);
+    displayMenu = displayMenu.join('');
+    console.log('displayMenu after join',displayMenu);
+    sectionCenter.innerHTML = displayMenu;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    displayMenuItems(menu);
+});
+
+
