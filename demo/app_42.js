@@ -42,7 +42,7 @@ const menu = [
     {
         id: 5,
         title:'dinner double',
-        category:'dinner',
+        category:'dessert',
         price:13.99,
         img:'./images/item-2.jpeg',
         remote_img:'',
@@ -60,10 +60,6 @@ const menu = [
 
     },
 ];
-
-const menubtn = ["all","breakfast","lunch","shakes","dinner"];
-
-
 
 
 const sectionCenter = document.querySelector('.section-center');
@@ -97,18 +93,18 @@ const displayMenuItems = (menu) => {
 
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
-    displayMenubtnItem(menubtn);
+    displayMenubtnItem(menu);
 });
 
-const displayMenubtnItem = (menubtn) =>{
-    let displayMenubtn = menubtn.map( (item) =>{
+const displayMenubtnItem = (menu) =>{
+    const menubtn = ["all", ...new Set(menu.map((item)=>item.category))].map((item=>{
         return`
-        <button type="button" class="filter-btn" data-id="all">${item}</button>
+        <button type="button" class="filter-btn" data-id=${item}>${item}</button>
         `
-    });
-    console.log('displayMenubtn before join',displayMenubtn);
-    displayMenubtn = displayMenubtn.join('');
-    console.log('displayMenubtn after join',displayMenubtn);
-    btnContainer.innerHTML = displayMenubtn;
+    }));
+
+    console.log('array', menubtn);
+
+    btnContainer.innerHTML = menubtn.join('');
 }
 
