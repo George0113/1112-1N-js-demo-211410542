@@ -61,6 +61,8 @@ const menu = [
     },
 ];
 
+const menubtn = ["all","breakfast","lunch","shakes","dinner"];
+
 
 
 
@@ -85,14 +87,28 @@ const displayMenuItems = (menu) => {
         
         `
     });
-    console.log('displayMenu before join',displayMenu);
+    // console.log('displayMenu before join',displayMenu);
     displayMenu = displayMenu.join('');
-    console.log('displayMenu after join',displayMenu);
+    // console.log('displayMenu after join',displayMenu);
     sectionCenter.innerHTML = displayMenu;
 }
 
+
+
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
+    displayMenubtnItem(menubtn);
 });
 
+const displayMenubtnItem = (menubtn) =>{
+    let displayMenubtn = menubtn.map( (item) =>{
+        return`
+        <button type="button" class="filter-btn" data-id="all">${item}</button>
+        `
+    });
+    console.log('displayMenubtn before join',displayMenubtn);
+    displayMenubtn = displayMenubtn.join('');
+    console.log('displayMenubtn after join',displayMenubtn);
+    btnContainer.innerHTML = displayMenubtn;
+}
 
