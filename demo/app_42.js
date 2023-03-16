@@ -49,12 +49,13 @@ const displayMenubtnItem = (menu) =>{
         console.log('data-id',e.currentTarget.dataset.id);
         const category = e.currentTarget.dataset.id;
         const filterMenu = menu.filter( (item) => item.category === category);
-        console.log('filterMenu',filterMenu);
+
         if(category === 'all'){
           console.log('all',menu);
           displayMenuItems(menu);
         }else{
-          displayMenuItems(filterMenu);
+          console.log(category,filterMenu);
+            displayMenuItems(filterMenu);
         }
        });
     });
