@@ -45,6 +45,8 @@ function bmiCalcSuggest_42(height, weight){
 
 
 
+
+
 bmiCalcSuggest_42(1.75, 55);
 bmiCalcSuggest_42(1.75, 70);
 bmiCalcSuggest_42(1.75, 85);
