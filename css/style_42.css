@@ -164,7 +164,9 @@ a{
 /* banner section */
 .banner-section{
 
-  height: 900px;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
   width: 100%;
   display: block;
 }
