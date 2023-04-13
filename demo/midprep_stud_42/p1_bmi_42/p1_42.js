@@ -62,6 +62,11 @@ const bmi_data_42 = [
         weight: 85,
     },
 ];
+
+bmi_data_42.forEach((item)=>{
+    bmiCalcSuggest_42(item.height,item.weight);
+});
+
 const bmi_data2_42 = [
     {
         height: 1.75,
@@ -105,9 +110,7 @@ const bmi_data2_42 = [
     },
 ];
 
-bmi_data_42.forEach((item)=>{
-    bmiCalcSuggest_42(item.height,item.weight);
-});
+
 
 bmi_data2_42.forEach((item)=>{
     const bmi = bmiCalc_42(item.height,item.weight);
