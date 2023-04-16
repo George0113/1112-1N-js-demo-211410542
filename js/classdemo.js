@@ -52,12 +52,6 @@ const showClassDemo = (week) => {
         case 'p3':
             showDome.innerHTML = `<iframe src='./demo/midprep_stud_42/p3_tour_42/index.html' width="100%" height="100%"/>`;
             break;
-        case 'github':
-            showDome.innerHTML = `<iframe src='https://github.com/George0113/1112-1N-js-demo-211410542' width="100%" height="100%"/>`;
-            break;
-        case 'github':
-            showDome.innerHTML = `<iframe src='https://github.com/George0113/1112-1N-js-demo-211410542/commits/main' width="100%" height="100%"/>`;
-            break;   
     }
 
     
