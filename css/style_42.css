@@ -39,7 +39,6 @@ a{
 	position: relative;
 	z-index: 99;
 	padding:15px;
-	background-color: #b6d0cf;
 }
 .header .item-left{
 	flex:0 0 17%;
@@ -170,7 +169,6 @@ a{
   height: 700px;
   width: 100%;
   display: block;
-  background-color: bisque;
 }
 .mobile-menu-head,
 .mobile-menu-trigger{
