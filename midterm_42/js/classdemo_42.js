@@ -1,6 +1,6 @@
-const showClassDemo = (week) => {
+const showClassDemo = (code) => {
   const showDemo = document.querySelector('.banner-section');
-  switch (week) {
+  switch (code) {
     case 'w1':
       showDemo.innerHTML = `<iframe src='./demo/w01/index.html' width="100%" height="100%" />`;
       break;
@@ -51,6 +51,15 @@ const showClassDemo = (week) => {
       break;
     case 'w9-md':
       showDemo.innerHTML = `<iframe src='./demo/md/w09/w09_xx.html' width="100%" height="100%" />`;
+      break;
+    case 'mid-p1-42':
+      showDemo.innerHTML = `<iframe src='./p1_42/p1_42.html' width="100%" height="100%" />`;
+      break;
+    case 'mid-p2-42':
+      showDemo.innerHTML = `<iframe src='./p2_42/p2_42.html' width="100%" height="100%" />`;
+      break;
+    case 'mid-p3-42':
+      showDemo.innerHTML = `<iframe src='./p3_42/p3_42.html' width="100%" height="100%" />`;
       break;
   }
 };
