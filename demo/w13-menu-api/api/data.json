@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "hot dog",
+    "category": "breakfast",
+    "price": 15.59,
+    "local_img": "./menu/images/hotdog.jpg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/hotdog.jpg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam."
+  },
+  {
+    "id": 2,
+    "title": "Hamburger",
+    "category": "dessert",
+    "price": 150.59,
+    "local_img": "./menu/images/Hamburger.jpg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/Hamburger.jpg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita "
+  },
+  {
+    "id": 3,
+    "title": "steak",
+    "category": "dinner",
+    "price": 1500.59,
+    "local_img": "./menu/images/11.jpg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/11.jpg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  },
+  {
+    "id": 4,
+    "title": "Country Delight",
+    "category": "lunch",
+    "price": 20.99,
+    "local_img": "./menu/images/item-4.jpeg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/item-4.jpeg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  },
+  {
+    "id": 5,
+    "title": "Egg Attack",
+    "category": "breakfast",
+    "price": 2.99,
+    "local_img": "./menu/images/item-5.jpeg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/item-5.jpeg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  },
+  {
+    "id": 6,
+    "title": "Oreo Dream",
+    "category": "shakes",
+    "price": 18.99,
+    "local_img": "./menu/images/item-6.jpeg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/item-6.jpeg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  },
+  {
+    "id": 7,
+    "title": "Bacon Overflow",
+    "category": "breakfast",
+    "price": 8.99,
+    "local_img": "./menu/images/item-7.jpeg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/item-7.jpeg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  },
+  {
+    "id": 8,
+    "title": "American Classic",
+    "category": "lunch",
+    "price": 12.99,
+    "local_img": "./menu/images/item-8.jpeg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/item-8.jpeg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  },
+  {
+    "id": 9,
+    "title": "Quarantine Buddy",
+    "category": "lunch",
+    "price": 13.99,
+    "local_img": "./menu/images/item-9.jpeg",
+    "remote_img":"https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/menu/item-9.jpeg",
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
+  }
+]
