@@ -69,11 +69,13 @@ const displayMenuButtons = () => {
 
 const fetchData = async () =>{
   try {
+    //let{data,error} = await supa.from('menu_42').select('*');
     const response = await fetch(url,{
       method:'GET',
       headers:{
         apiKey:`${supabase_key}`,
         Authorization:`Bearer ${supabase_key}`
+
       }
     });
     const data = response.json();
