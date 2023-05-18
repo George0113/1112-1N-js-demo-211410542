@@ -1,12 +1,14 @@
 const btn = document.querySelector('.btn');
 
+
+
 btn.addEventListener('click', async () => {
-  const url = 'https://theaudiodb.com/api/v1/json/2/search.php?s=coldplay';
+  const url = 'https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=Danny%20Welbeck';
 try {
 	const response = await fetch(url);
 	const data = await response.json();
-  console.log('data',data.artists);
-  displayItems(data.artists);
+  console.log('data',data);
+  displayItems(data);
 } catch (error) {
 	console.error(error);
 }
