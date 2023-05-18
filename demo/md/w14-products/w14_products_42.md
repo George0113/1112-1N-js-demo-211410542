@@ -1,5 +1,7 @@
 ### [Github URL](https://github.com/George0113/1112-1N-js-demo-211410542/commits/main)
 
+### [Vercel URL](https://github.com/George0113/1112-1N-js-demo-211410542/commits/main)
+
 ### W14-P3: Get products from url (https://course-api.com/javascript-store-products)
 
 ![w14-p3-1.png](https://spguhxeeusfjlibdhcxj.supabase.co/storage/v1/object/public/demo42/md_1N_img/w14-p3-1.png)
