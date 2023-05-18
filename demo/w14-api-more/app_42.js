@@ -1,12 +1,12 @@
 const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', async () => {
-  const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a';
+  const url = 'https://theaudiodb.com/api/v1/json/2/search.php?s=coldplay';
 try {
 	const response = await fetch(url);
 	const data = await response.json();
-  console.log('data',data.drinks);
-  displayItems(data.drinks);
+  console.log('data',data.artists);
+  displayItems(data.artists);
 } catch (error) {
 	console.error(error);
 }
@@ -15,8 +15,8 @@ try {
 const displayItems = (items) => {
   const displayData = items
     .map((item) => {
-      const { strDrink } = item;
-      return `<p>${strDrink}</p>`;
+      const { strArtist } = item;
+      return `<p>${strArtist}</p>`;
     })
     .join('');
   const element = document.createElement('div');
