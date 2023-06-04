@@ -6,6 +6,7 @@ const mealsEl = document.querySelector('#meals');
 const single_mealsEl = document.querySelector('#single-meal');
 
 
+
 const searchMeal = (e)=>{
     e.preventDefault();
     const term = search.value;
@@ -35,7 +36,7 @@ const searchMeal = (e)=>{
     }else{
         // alert('Please enter a search term');
     }
-}
+};
 
 const getMealById = (mealID)=>{
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
@@ -45,7 +46,7 @@ const getMealById = (mealID)=>{
         const meal = data.meals[0];
         addMealToDOM(meal);
     })
-}
+};
 
 const addMealToDOM = (meal)=>{
     const ingredients = [];
@@ -73,7 +74,7 @@ const addMealToDOM = (meal)=>{
         </div>
     </div>
     `
-}
+};
 
 
 
@@ -96,3 +97,20 @@ mealsEl.addEventListener('click', e =>{
         getMealById(mealID);
     }
 });
+
+
+
+
+
+const randomBtn = () => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+        .then(resp => resp.json())
+        .then(data => {
+            console.log('meal data', data);
+            const meal = data.meals[0];
+            addMealToDOM(meal);
+        });
+};
+
+
+random.addEventListener('click', randomBtn);
