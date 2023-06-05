@@ -52,8 +52,29 @@ const showClassDemo = (week) => {
         case 'p3':
             showDome.innerHTML = `<iframe src='./demo/midprep_stud_42/p3_tour_42/index.html' width="100%" height="100%"/>`;
             break;
+        case 'w11':
+            showDome.innerHTML = `<iframe src='./demo/w11/index.html' width="100%" height="100%"/>`;
+            break;
+        case 'w12':
+            showDome.innerHTML = `<iframe src='./demo/w12-async/7-async-tutorials/index.html' width="100%" height="100%"/>`;
+            break;
+        case 'w13':
+            showDome.innerHTML = `<iframe src='./demo/w13-menu-api/menu.html' width="100%" height="100%"/>`;
+            break;
+        case 'w14':
+            showDome.innerHTML = `<iframe src='./demo/w14-api-more/p4_42/index.html' width="100%" height="100%"/>`;
+            break;
         case 'w15':
             showDome.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`;
+            break;
+        case 'w16':
+            showDome.innerHTML = `<iframe src='./demo/w16-meal-finder/index.html' width="100%" height="100%"/>`;
+            break;
+        case 'api-md':
+            showDome.innerHTML = `<iframe src='./demo/md/api/api_42.html' width="100%" height="100%"/>`;
+            break;
+        case 'api':
+            showDome.innerHTML = `<iframe src='./demo/api/api_42.html' width="100%" height="100%"/>`;
             break;
     }
 
