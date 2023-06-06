@@ -74,7 +74,7 @@ const showClassDemo = (week) => {
             showDome.innerHTML = `<iframe src='./demo/w14-api-more/p4_42/index.html' width="100%" height="100%"/>`;
             break;
         case 'w14-md':
-            showDome.innerHTML = `<iframe src='./demo/md/w14/w14_42.html' width="100%" height="100%"/>`;
+            showDome.innerHTML = `<iframe src='./demo/md/w14-products/w14_42.html' width="100%" height="100%"/>`;
             break;
         case 'w15':
             showDome.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`;
