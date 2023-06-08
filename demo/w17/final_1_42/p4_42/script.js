@@ -13,11 +13,13 @@ const config = {
   showCondition: 20000000,
 };
 
-const updateDOM = (providedData = data) => {};
+const updateDOM = (providedData = data) => {
+
+};
 
 const addData = (obj) => {
   data.push(obj);
-  // console.log('data', data);
+  console.log('data', data);
   updateDOM();
 };
 
@@ -56,3 +58,9 @@ const calculateWealth = () => {};
 addUserBtn.addEventListener('click', getRandomUser);
 sortBtn.addEventListener('click', sortByRichest);
 calculateBtn.addEventListener('click', calculateWealth);
+`
+<div class="person">
+  <strong>${name}</strong>
+  $${money}
+</div>
+`
