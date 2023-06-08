@@ -60,7 +60,7 @@ sortBtn.addEventListener('click', sortByRichest);
 calculateBtn.addEventListener('click', calculateWealth);
 `
 <div class="person">
-  <strong>${name}</strong>
-  $${money}
+  <h2><strong>${name}</strong>
+  $${money}</h2>
 </div>
 `
