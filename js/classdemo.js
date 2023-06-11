@@ -94,6 +94,9 @@ const showClassDemo = (week) => {
         case 'api':
             showDome.innerHTML = `<iframe src='./demo/api-project/api_42.html' width="100%" height="100%"/>`;
             break;
+        case 'api_learning':
+            showDome.innerHTML = `<iframe src='./demo/api-project/Learning.html' width="100%" height="100%"/>`;
+            break;
     }
 
     
