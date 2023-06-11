@@ -1,5 +1,5 @@
 var accessKey = "812193ef71ca946e361ed541979a0cfd91e9419a19235fd05f51ea14233f020a";
-var perPage = 30;
+var perPage = 60;
 
 var utm = "&utm_source=Photo-app&utm_medium=referral";
 
